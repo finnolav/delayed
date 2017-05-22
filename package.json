@@ -1,0 +1,37 @@
+{
+  "name": "@finnolav/delayed",
+  "version": "0.1.0",
+  "description": "Delay a function call. The function can be called with an optional payload.",
+  "license": "MIT",
+  "repository": "finnolav/delayed",
+  "author": {
+    "name": "Finn-Olav Myrvold",
+    "email": "finnolav@gmail.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "delay",
+    "delayed",
+    "call",
+    "function",
+    "callback",
+    "apply",
+    "payload",
+    "arguments",
+    "wait",
+    "utility",
+    "util"
+  ],
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.4.1"
+  }
+}
