@@ -1,9 +1,9 @@
 {
-  "name": "@finnolav/delayed",
+  "name": "@finnolav/delayed-call",
   "version": "0.1.0",
-  "description": "Delay a function call. The function can be called with an optional payload.",
+  "description": "For making delayed function calls. Arguments to a delayed function is optional.",
   "license": "MIT",
-  "repository": "finnolav/delayed",
+  "repository": "finnolav/delayed-call",
   "author": {
     "name": "Finn-Olav Myrvold",
     "email": "finnolav@gmail.com"
