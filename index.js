@@ -1,28 +1,30 @@
-module.exports = {
-  create,
-  remove,
-  removeAll
-}
+var timeouts = [];
 
-let boxes = [];
+var create = function(ms, callback) {
+  var payload = [];
+  if(arguments.length > 2) {
+    for(var i = 2; i < arguments.length; i++) {
+      payload.push(arguments[i]);
+    }
+  }
 
-function create(ms, callback, payload) {
-  if(payload === undefined || payload === null) payload = {};
-  const box = {};
-  box.id = setTimeout(() => {
-    boxes.splice(boxes.indexOf(box), 1)[0];
-    callback(payload);
-  }, ms)
+  var box = {};
+  timeouts.push(box);
   box.callback = callback;
   box.payload = payload;
-  boxes.push(box);
+  box.id = setTimeout(function() {
+    timeouts.splice(timeouts.indexOf(box), 1)[0];
+    if(payload.length > 0) callback.apply(null, payload);
+    else callback();
+  }, ms)
+
   return box.id;
 }
 
-function remove(id) {
-  let foundBox = null;
-  for(let i = 0; i < boxes.length; i++) {
-    const currBox = boxes[i];
+var clearById = function(id) {
+  var foundBox = null;
+  for(var i = 0; i < timeouts.length; i++) {
+    var currBox = timeouts[i];
     if(currBox.id === id) {
       foundBox = currBox;
       clearTimeout(id);
@@ -30,13 +32,19 @@ function remove(id) {
     }
   }
   if(foundBox !== null) {
-    boxes.splice(boxes.indexOf(foundBox), 1);
+    timeouts.splice(timeouts.indexOf(foundBox), 1);
   }
 }
 
-function removeAll() {
-  for(let i = 0; i < boxes.length; i++) {
-    clearTimeout(boxes[i].id);
+function clearAll() {
+  for(var i = 0; i < timeouts.length; i++) {
+    clearTimeout(timeouts[i].id);
   }
-  boxes = [];
+  timeouts = [];
+}
+
+module.exports = {
+  create: create,
+  clearById: clearById,
+  clearAll: clearAll
 }
