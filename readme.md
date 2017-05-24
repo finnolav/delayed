@@ -1,5 +1,5 @@
 # delayed-call
-For making delayed function calls.  
+For making delayed function calls.
 Arguments to a delayed function is optional.
 
 ## Install
