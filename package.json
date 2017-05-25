@@ -1,5 +1,5 @@
 {
-  "name": "@finnolav/delayed-call",
+  "name": "delayed-call",
   "version": "0.1.0",
   "description": "For making delayed function calls. Arguments to a delayed function is optional.",
   "license": "MIT",
