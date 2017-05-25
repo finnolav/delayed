@@ -60,7 +60,7 @@ const delayId = delayedCall.create(500, () => {
 delayedCall.clearById(delayId);
 
 // Prints nothing.
-// The delayed call is cleared before 500 ms.
+// The delayed call is cleared before execution.
 ```
 
 ### clearAll()
