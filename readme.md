@@ -1,5 +1,7 @@
-# delayed-call
-For making delayed function calls.
+# delayed-call [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+
+> For making delayed function calls
+
 Arguments to a delayed function is optional. Delayed calls can be cleared between creation and execution. Clear single delayed call or all at once.
 
 ## Install
@@ -11,7 +13,7 @@ $ npm install --save delayed-call
 ## Functions
 
 ### create(ms, func, ...args)
-Create a delayed call.
+> Create a delayed call.
 
 ```
 Arguments
@@ -44,7 +46,7 @@ delayedCall.create(1000, (arg1, arg2) => {
 ```
 
 ### clearById(id)
-Clear a single created delayed call.
+> Clear a single created delayed call.
 
 ```
 Arguments
@@ -64,7 +66,7 @@ delayedCall.clearById(delayId);
 ```
 
 ### clearAll()
-Clear all created delayed calls.
+> Clear all created delayed calls.
 
 #### Usage
 ```js
