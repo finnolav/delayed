@@ -12,7 +12,11 @@
     "index.js"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "xo && ava"
+  },
+  "xo": {
+    "space": true,
+    "esnext": false
   },
   "keywords": [
     "delay",
@@ -28,10 +32,10 @@
     "util"
   ],
   "engines": {
-    "node": ">=4.2.0"
+    "node": ">=4"
   },
   "devDependencies": {
-    "chai": "^4.0.0",
-    "mocha": "^3.4.2"
+    "ava": "^0.19.1",
+    "xo": "^0.18.2"
   }
 }
