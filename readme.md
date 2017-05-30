@@ -1,4 +1,6 @@
-# delayed-call [![Build Status](https://travis-ci.org/finnolav/delayed-call.svg?branch=master)](https://travis-ci.org/finnolav/delayed-call) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+# delayed-call
+
+[![NPM version](https://img.shields.io/npm/v/delayed-call.svg)](https://www.npmjs.org/package/delayed-call) [![Build Status](https://travis-ci.org/finnolav/delayed-call.svg?branch=master)](https://travis-ci.org/finnolav/delayed-call) [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 > For making delayed function calls
 
