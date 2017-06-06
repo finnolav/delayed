@@ -12,7 +12,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "xo": {
     "space": true,
@@ -36,6 +37,8 @@
   },
   "devDependencies": {
     "ava": "^0.19.1",
+    "coveralls": "^2.13.1",
+    "nyc": "^11.0.2",
     "xo": "^0.18.2"
   }
 }
