@@ -12,7 +12,7 @@
     "index.js"
   ],
   "scripts": {
-    "test": "xo && nyc ava",
+    "test": "xo && nyc ava --serial",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "xo": {
