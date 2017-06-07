@@ -5,7 +5,7 @@
 
 > For making delayed function calls
 
-Arguments to a delayed function is optional. Delayed calls can be cleared between creation and execution. Clear single delayed call or all at once.
+Pass any number of arguments to the delayed function. Delayed calls can be cleared between creation and execution. Clear single delayed call or all at once.
 
 ## Install
 
