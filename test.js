@@ -70,6 +70,7 @@ test.cb('should clear single delayed call', t => {
     count++;
   });
   delayedCall.clearById(id);
+  delayedCall.clearById(1000);
 
   delayedCall.create(300, function () {
     t.is(count, 0);
