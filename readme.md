@@ -15,17 +15,22 @@ $ npm install --save delayed-call
 
 ## Functions
 
-### create(ms, func, ...args)
+### create(ms, fn, [...args])
 > Create a delayed call
 
-```
-Arguments
-  ms       (number)     Delay in milliseconds.
-  func     (function)   The function to be called after the delay.
-  ...args  (*)          Optional any number of arguments supplied to the delayed function.
+### Arguments
+ms `number`  
+Delay in milliseconds.
 
-Returns the id (number) of the delayed call.
-```
+fn `function`  
+The function to be called after the delay.
+
+...args  `*`  
+Optional. Any number of arguments supplied to the delayed function.
+
+### Returns
+id `number`  
+The id of the delayed call.
 
 #### Usage
 ```js
@@ -51,10 +56,9 @@ delayedCall.create(1000, (arg1, arg2) => {
 ### clearById(id)
 > Clear a single created delayed call
 
-```
-Arguments
-  id       (number)     The id of the delayed call.
-```
+### Arguements
+id `number`  
+The id of the delayed call to be cleared.
 
 #### Usage
 ```js
