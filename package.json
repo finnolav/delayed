@@ -1,6 +1,6 @@
 {
   "name": "delayed-call",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "For making delayed function calls. Arguments to a delayed function is optional.",
   "license": "MIT",
   "repository": "finnolav/delayed-call",
