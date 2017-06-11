@@ -18,7 +18,7 @@ $ npm install --save delayed-call
 ### create(ms, fn, [...args])
 > Create a delayed call
 
-#### Arguments
+#### Parameters
 `ms` : `number`  
 Delay in milliseconds.
 
@@ -56,7 +56,7 @@ delayedCall.create(1000, (arg1, arg2) => {
 ### clearById(id)
 > Clear a single created delayed call
 
-#### Arguements
+#### Parameters
 `id` : `number`  
 The id of the delayed call to be cleared.
 
