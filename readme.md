@@ -13,7 +13,7 @@ Pass any number of arguments to the delayed function. Delayed calls can be clear
 $ npm install --save delayed-call
 ```
 
-## Functions
+## API
 
 ### create(ms, fn, [...args])
 > Create a delayed call
