@@ -15,7 +15,7 @@ $ npm install --save delayed-call
 
 ## API
 
-### create(ms, fn, [...args])
+### `create(ms, fn, [...args])`
 > Create a delayed call
 
 #### Parameters
@@ -53,7 +53,7 @@ delayedCall.create(1000, (arg1, arg2) => {
 // Prints "Hello world!" after 1000 ms.
 ```
 
-### clearById(id)
+### `clearById(id)`
 > Clear a single created delayed call
 
 #### Parameters
@@ -72,7 +72,7 @@ delayedCall.clearById(delayId);
 // The delayed call is cleared before execution.
 ```
 
-### clearAll()
+### `clearAll()`
 > Clear all created delayed calls
 
 #### Usage
