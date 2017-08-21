@@ -3,7 +3,7 @@
 [![Version](https://badge.fury.io/js/delayed-call.svg)](http://badge.fury.io/js/delayed-call)&nbsp;
 [![Build Status](https://travis-ci.org/finnolav/delayed-call.svg?branch=master)](https://travis-ci.org/finnolav/delayed-call)&nbsp;
 [![Coverage Status](https://coveralls.io/repos/github/finnolav/delayed-call/badge.svg?branch=master)](https://coveralls.io/github/finnolav/delayed-call?branch=master)&nbsp;
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)&nbsp;
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
 
 
